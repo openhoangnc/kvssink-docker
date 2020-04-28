@@ -34,8 +34,8 @@ RUN mkdir -p ${GST_PLUGIN_PATH} && cd ${GST_PLUGIN_PATH} \
     && make \
     && cd /
 
-#cleanup
-RUN rm -rf kvs-producer-sdk
+# cleanup
+# RUN rm -rf kvs-producer-sdk
 RUN apt remove -y \
     wget \
     clang \
