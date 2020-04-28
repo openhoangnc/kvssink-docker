@@ -1,0 +1,8 @@
+services:
+    - docker
+
+before_install:
+    - docker build --tag kvs .
+
+script:
+    - docker run kvs gst-inspect-1.0 kvssink
